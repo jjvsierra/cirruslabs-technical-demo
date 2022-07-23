@@ -19,6 +19,7 @@ Technologies used:
 * Spring Boot
 * Lombok 
 * OpenAPI 3.0
+* Maven
 ``` 
 
 ---
