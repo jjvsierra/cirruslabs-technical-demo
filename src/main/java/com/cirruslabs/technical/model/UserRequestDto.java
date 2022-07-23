@@ -19,14 +19,17 @@ import static com.cirruslabs.technical.utils.Constants.USERNAME_EMPTY_ERROR_MESS
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRequestDto {
+
     @JsonProperty("username")
     @NotBlank(message = USERNAME_EMPTY_ERROR_MESSAGE)
     @Schema(description = USERNAME_EMPTY_ERROR_MESSAGE)
     private String userName;
+
     @NotBlank(message = PASSWORD_EMPTY_ERROR_MESSAGE)
     @Pattern(regexp = PASSWORD_PATTERN, message = PASSWORD_PATTERN_ERROR_MESSAGE)
     @Schema(description = PASSWORD_PATTERN_ERROR_MESSAGE)
     private String password;
+
     @JsonProperty("ip_address")
     @NotBlank(message = IP_ADDRESS_EMPTY_ERROR_MESSAGE)
     @Schema(description = IP_ADDRESS_EMPTY_ERROR_MESSAGE)

@@ -3,6 +3,7 @@ package com.cirruslabs.technical.model;
 public class GeolocationDto {
     private String country;
     private String city;
+
     public String getCountry() {
         return country;
     }

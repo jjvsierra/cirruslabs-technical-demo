@@ -26,7 +26,6 @@ public class UserController {
         this.geolocationService = geolocationService;
     }
 
-
     @Operation(summary = "Register an user")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "User welcome message",
